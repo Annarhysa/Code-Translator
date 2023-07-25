@@ -1,12 +1,14 @@
 const axios = require('axios');
-require('dotenv').config();
-const apiKey = process.env.OPENAI_API_KEY;
 
-const client = axios.create({
-  headers: {
-    'Content-Type': 'application/json',
-    'Authorization': `Bearer ${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}`  
-}
+require('dotenv').config();
+
+const apiKey = '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'
+
+const client = create({
+    headers: {
+        'Content-Type': 'application/json',
+        'Authorization': `Bearer ${apiKey}` // Use the API key to authenticate the request
+  }
 });
 
 const data = {
