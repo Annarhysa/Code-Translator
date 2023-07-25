@@ -25,5 +25,3 @@ client.post('https://api.openai.com/v1/engines/davinci/completions', data)
   .catch(error => {
     console.error(error);
   });
-
-  //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
