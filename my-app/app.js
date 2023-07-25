@@ -5,8 +5,8 @@ const apiKey = process.env.OPENAI_API_KEY;
 const client = axios.create({
   headers: {
     'Content-Type': 'application/json',
-    'Authorization': `Bearer ${apiKey}` // Use the API key to authenticate the request
-  }
+    'Authorization': `Bearer ${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}`  
+}
 });
 
 const data = {
