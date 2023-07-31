@@ -2,7 +2,7 @@ const axios = require('axios');
 
 require('dotenv').config();
 
-const apiKey = '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'
+const apiKey = 
 
 const client = create({
     headers: {
