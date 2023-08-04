@@ -1,5 +1,23 @@
-// Next.js API route support: https://nextjs.org/docs/api-routes/introduction
+import { OpenAIStream } from ".../utils";
 
-export default function handler(req, res) {
-  res.status(200).json({ name: 'John Doe' })
+export const config = {
+  runtime: 'edge',
+};
+
+export default async function handler(req,res) {
+  try {
+    const { inputLanguage, outputLanguage, inputCode } = await req.json();
+
+    const stream = await OpenAIStream(
+      inputLanguage,
+      outputLanguage,
+      inputCode
+    );
+
+    return new Response(stream);
+  }
+
+  catch (error){
+    res.status(500).send('Error')
+  }
 }
