@@ -106,7 +106,7 @@ export default function Home() {
 
       {/* output code window */}
       <CodeWindow code={outputCode} setCode={setOutputCode} loading={loading} handleLanguageChange={handleOutputLanguageChange} language={outputLanguage} />
-      <p className="font-sans mt-5 pb-5">Powered by <a className="ref-link text-[#C53AAE]" href="http://metaschool.so/" target="_blank" rel="noopener noreferrer">metaschool 🔮</a></p>
+      <p className="font-sans mt-5 pb-5">Created by <a className="ref-link text-[#C53AAE]" href="https://www.linkedin.com/in/annarhysa-albert-92550918b/" target="_blank" rel="noopener noreferrer">Annarhysa Albert </a></p>
       <a className=' flex font-sans mb-5 p-1 items-center' href={`https://twitter.com/intent/tweet?text=${encodeURIComponent('Check out this awesome code translator!')}&url=${encodeURIComponent('https://metaschool.so')}`} target="_blank" rel="noopener noreferrer"><Image className='mr-0.5 justify-center' src={twitter_image} alt="Twitter" />Share it on Twitter</a>
     </div>
 
