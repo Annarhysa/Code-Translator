@@ -1,5 +1,5 @@
 // Import the `languages` object from the `@/constants/languages` module.
-import { languages } from '@/constants/languages';
+import { languages } from '../constants/languages';
 import Select from 'react-select';
 
 const LanguageSelect = ({ language, handleLanguageChange, disabled }) => {
